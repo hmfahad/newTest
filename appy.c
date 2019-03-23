@@ -26,14 +26,11 @@ int main()
                 continue;
 
 
-            if((incrementer%a==0)&&(incrementer%b!=0))
+            if(((incrementer%a==0)&&(incrementer%b!=0))||((incrementer%a!=0)&&(incrementer%b==0)))
             {
                totalSolve++;
             }
-            else if((incrementer%a!=0)&&(incrementer%b==0))
-            {
-                totalSolve++;
-            }
+
         }
 
         if(totalSolve>=k)
